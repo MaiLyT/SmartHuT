@@ -1,0 +1,67 @@
+.devices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 600;
+  width: 100%;
+}
+.devices h1 {
+  margin-bottom: 10px;
+}
+
+.devices .room {
+  background-color: rgba(34, 122, 108, 0.74);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  min-height: 80;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.devices .room .room_name {
+  color: white;
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+.devices .room li {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.devices .loader {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+  margin:15px auto;
+  position: relative;
+  background: #FFF;
+  box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 4s linear infinite;
+  transition: all 1s;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 #c586a4, 24px 0 #FFF;
+  }
+  66% {
+    background: #868dc5;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #246655;
+  }
+}
+
+/*# sourceMappingURL=Devices.css.map */
